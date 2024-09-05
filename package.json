@@ -1,0 +1,9 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Criando um API REST com Node.js",
+  "main": "src/server.js",
+  "scripts": {},
+  "author": "Gabriel Valino",
+  "license": "ISC"
+}
