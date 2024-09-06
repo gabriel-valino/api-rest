@@ -1,9 +1,11 @@
 import express from "express"
+import { routes } from "./routes"
 
-function sum (a: number, b:number): number{
-  return a + b
-}
+const PORT = 3333 
 
-const result: number = sum(5, 7)
+const app = express()
 
-console.log("Resultado da soma: " + result)
+app.use(express.json())
+app.use(routes)
+
+app.listen(PORT, () => console.log('Server is running on port ' + PORT))
